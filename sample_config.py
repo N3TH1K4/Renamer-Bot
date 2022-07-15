@@ -10,10 +10,10 @@ class Config(object):
     API_HASH = os.environ.get("API_HASH")
     # Get these values from my.telegram.org
     
-    FORCE_SUB = "SDBOTz"
+    FORCE_SUB = ""
 
     # Array to store users who are authorized to use the bot
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "1813305809 1930645496").split())
 
     # Ban Unwanted Members..
     BANNED_USERS = []
