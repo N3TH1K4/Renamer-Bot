@@ -13,7 +13,7 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: "b3dcc170-bd13-4ef2-96e1-812137fc7546"
-          heroku_app_name: "ronchon-maison-80433" #Must be unique in Heroku
+          heroku_app_name: "voyage-fromage-18062" #Must be unique in Heroku
           heroku_email: "waifubotstatus@yandex.com"
         env:
           HD_APP_ID: "17945796"
