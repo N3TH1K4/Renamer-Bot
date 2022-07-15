@@ -1,0 +1,21 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master # Changing the branch here would also work
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: "b3dcc170-bd13-4ef2-96e1-812137fc7546"
+          heroku_app_name: "ronchon-maison-80433" #Must be unique in Heroku
+          heroku_email: "waifubotstatus@yandex.com"
+        env:
+          HD_APP_ID: "17945796"
+          HD_API_HASH: "4a05481a5da2d66f801acffc4ca5ee4b"
+          HD_TG_BOT_TOKEN: "5536332616:AAGdgvwh4cZB8fGMHI4DIhUlfTheyovvp5c"           
